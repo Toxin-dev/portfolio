@@ -1,0 +1,10 @@
+@mixin clip-text {
+  background-image: linear-gradient(
+    to right,
+    rgb(177, 108, 234),
+    rgb(255, 103, 101),
+    rgb(255, 164, 77)
+  );
+  background-clip: text;
+  color: transparent;
+}
