@@ -53,8 +53,9 @@ a {
 }
 
 .footer {
-  padding: 0 2rem;
-  background-color: wheat;
+  padding: 1rem 2rem;
+  background-color: rgb(23, 23, 23);
+  color: rgb(219, 219, 219);
   display: flex;
   justify-content: space-between;
 }

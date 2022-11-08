@@ -1,6 +1,7 @@
 .footer {
-  padding: 0 2rem;
-  background-color: wheat;
+  padding: 1rem 2rem;
+  background-color: $bg-dark;
+  color: $text-white;
   display: flex;
   justify-content: space-between;
 }
