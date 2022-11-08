@@ -47,14 +47,3 @@
     }
   }
 }
-.cv-link {
-  display: flex;
-  align-items: center;
-  & > * {
-    transition: all 0.3s;
-  }
-  &:hover > * {
-    margin: 0 0 0 2rem;
-    font-size: 2rem;
-  }
-}

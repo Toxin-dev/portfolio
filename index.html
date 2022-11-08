@@ -20,6 +20,7 @@
       src="https://kit.fontawesome.com/27f3ffb9e9.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/index.js" defer></script>
     <title>Jr Developer | Rakshyak Satpahty</title>
   </head>
   <body>
@@ -34,22 +35,29 @@
               field of web development.
             </h1>
             <div class="hero__btns">
-              <button class="hero__btn">Check out work</button
-              ><a id="cv-link" class="cv-link" href="/assets/cv.md" download=""
+              <button class="hero__btn">
+                <a href="#blog">Check out blogs</a></button
+              ><a
+                id="cv-link"
+                class="btn--link"
+                href="/assets/cv.md"
+                download=""
                 >Download CV <i class="fa-solid fa-arrow-right"></i
               ></a>
             </div>
           </div>
-            <a class="work__link">Work experience</a>
+          <a class="work__link">Work experience</a>
         </section>
-        <section id="services" class="services">
-          <div class="services__heading-title">Resources</div>
-          <h2 class="services__heading">framework I have worked with</h2>
-          <div class="services__items">
-            <div class="services__item">
+        <section id="resources" class="resources">
+          <div class="header">
+            <div class="header__heading-title">Resources</div>
+            <h2 class="header__heading">framework I have worked with</h2>
+          </div>
+          <div class="resources__items">
+            <div class="resources__item">
               <h3>Django</h3>
               <p>I have worked with django a ORM based python web framework.</p>
-              <ul class="services__item-ul">
+              <ul class="resources__item-ul">
                 <li>ORM</li>
                 <li>Created REST api using, Django rest framework</li>
                 <li>Implemented authentication using Djoser</li>
@@ -57,24 +65,24 @@
                 <li>Authenticated users using Simple jwt</li>
               </ul>
             </div>
-            <div class="services__item">
+            <div class="resources__item">
               <h3>Express js</h3>
               <p>
                 I have worked in express js, which is a minimal and flexible
                 Node js web application framework.
               </p>
-              <ul class="services__item-ul">
+              <ul class="resources__item-ul">
                 <li>Created rest full api for mongo db database</li>
                 <li>Created custome Event emmiter</li>
               </ul>
             </div>
-            <div class="services__item">
+            <div class="resources__item">
               <h3>Tailwind css</h3>
               <p>
                 I have worked with taliwind utlity css framework, packed with
                 flexible classes and produce highly optimized css generator.
               </p>
-              <ul class="services__item-ul">
+              <ul class="resources__item-ul">
                 <li>Created responsive UI layout</li>
                 <li>Created flexiablel UI changes</li>
                 <li>Configured utility classes for easy accessiblity</li>
@@ -82,6 +90,30 @@
             </div>
           </div>
         </section>
+        <section class="blog" id="blog">
+          <div class="header">
+            <div class="header__heading-title">Blogs</div>
+            <h2 class="header__heading">
+              I write blogs on what I have discovered
+            </h2>
+          </div>
+          <div class="blog__content">
+            <div class="blog__showcase-1"></div>
+            <div class="blog__showcase-2"></div>
+            <div class="blog__showcase-3"></div>
+            <div class="blog__showcase-4"></div>
+            <div class="blog__showcase-5"></div>
+            <div class="blog__showcase-5"></div>
+          </div>
+          <div class="blog__footer">
+            <a href="#blog" id="blog-link" class="btn--link"
+              >See more <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </section>
+        <footer class="footer">
+          <span>@copyright</span><span>created by: rakshyak</span>
+        </footer>
       </div>
       <aside class="aside">
         <div class="aside__profile">

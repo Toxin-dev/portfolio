@@ -1,19 +1,8 @@
-.services {
+.resources {
   text-align: center;
   @include media-screen($phone-screen) {
     text-align: start;
     padding-left: 2rem;
-  }
-  &__heading {
-    font-size: 4rem;
-    margin-bottom: 4rem;
-    &-title {
-      font-family: $font-family-plus;
-      font-size: 2.8rem;
-      margin-bottom: 2rem;
-      font-weight: bold;
-      @include clip-text;
-    }
   }
   &__items {
     display: flex;
