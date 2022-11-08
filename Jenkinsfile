@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                sh 'firefox index.html'
+                echo 'hello world'
             }
         }
     }
