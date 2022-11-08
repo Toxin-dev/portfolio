@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -22,6 +23,11 @@ a {
   top: 0;
   padding: 2rem 2rem 0;
   background-color: rgb(246, 246, 246);
+}
+@media screen and (max-width: 834px) {
+  .aside {
+    display: none;
+  }
 }
 .aside__profile {
   display: flex;
@@ -71,10 +77,22 @@ a {
   background-clip: text;
   color: transparent;
 }
+@media screen and (max-width: 500px) {
+  .hero__heading1 span {
+    font-size: 4rem;
+    background-color: red;
+  }
+}
 .hero__btns {
   display: flex;
   gap: 8rem;
+  flex-wrap: wrap;
   align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .hero__btns {
+    gap: 4rem;
+  }
 }
 .hero__btn {
   padding: 2rem;
@@ -119,7 +137,12 @@ a {
 
 .services {
   text-align: center;
-  height: 100vh;
+}
+@media screen and (max-width: 500px) {
+  .services {
+    text-align: start;
+    padding-left: 2rem;
+  }
 }
 .services__heading {
   font-size: 4rem;
@@ -136,18 +159,40 @@ a {
 }
 .services__items {
   display: flex;
-  gap: 2rem;
+  gap: 4rem 2rem;
   padding: 0 4rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 834px) {
+  .services__items {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .services__items {
+    flex-direction: column;
+  }
 }
 .services__item {
   text-align: start;
-  flex-basis: 400px;
   border: 1px solid black;
-  box-shadow: 10px 20px 0 black;
   padding: 4rem;
+  box-shadow: 10px 20px 0 black;
+  flex-basis: calc(33.3333333333% - 2rem);
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+@media screen and (max-width: 834px) {
+  .services__item {
+    flex-basis: calc(50% - 6rem);
+  }
+}
+@media screen and (max-width: 500px) {
+  .services__item {
+    padding: 2rem;
+    flex-basis: content;
+  }
 }
 .services__item > h3 {
   font-size: 3.2rem;

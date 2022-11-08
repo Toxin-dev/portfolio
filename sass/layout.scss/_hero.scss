@@ -18,12 +18,20 @@
       font-weight: bold;
       font-family: $font-family-plus;
       @include clip-text;
+      @include media-screen($phone-screen) {
+        font-size: 4rem;
+        background-color: red;
+      }
     }
   }
   &__btns {
     display: flex;
     gap: 8rem;
+    flex-wrap: wrap;
     align-items: center;
+    @include media-screen($phone-screen) {
+      gap: 4rem;
+    }
   }
   &__btn {
     padding: 2rem;
