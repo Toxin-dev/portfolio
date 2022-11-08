@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                echo 'build complete'
+                sh 'firefox index.html'
             }
         }
     }
