@@ -1,5 +1,6 @@
 .resources {
   text-align: center;
+  margin-bottom: 20rem;
   @include media-screen($phone-screen) {
     text-align: start;
     padding-left: 2rem;
@@ -28,7 +29,6 @@
     }
     @include media-screen($phone-screen) {
       padding: 2rem;
-      flex-basis: content;
     }
     display: flex;
     flex-direction: column;
