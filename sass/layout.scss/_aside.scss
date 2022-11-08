@@ -4,6 +4,9 @@
   top: 0;
   padding: 2rem 2rem 0;
   background-color: $bg-aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @include media-screen($tab-screen) {
     display: none;
   }
