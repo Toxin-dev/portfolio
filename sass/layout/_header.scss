@@ -37,19 +37,4 @@
       gap: 2rem;
     }
   }
-  &-xl {
-    margin-top: 4em;
-    font-size: 2.5rem;
-    font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
-    letter-spacing: -0.028em;
-    line-height: 1.1;
-    .underline {
-      font-style: normal;
-      text-decoration: underline var(--accent) 5px;
-    }
-    .highlight {
-      color: var(--accent);
-      font-style: normal;
-    }
-  }
 }
