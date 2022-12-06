@@ -3,8 +3,11 @@
   &__wrapper {
     padding-block: 84px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0 4rem;
+    @include media($phone) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   &__rings {
     position: absolute;

@@ -139,8 +139,13 @@ textarea:focus-visible {
 .contact__wrapper {
   padding-block: 84px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0 4rem;
+}
+@media screen and (min-width: 37.5em) {
+  .contact__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .contact__rings {
   position: absolute;
