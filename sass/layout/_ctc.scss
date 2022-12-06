@@ -1,0 +1,74 @@
+.contact {
+  position: relative;
+  &__wrapper {
+    padding-block: 84px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 4rem;
+  }
+  &__rings {
+    position: absolute;
+    left: 0;
+    bottom: 97px;
+    translate: -25%;
+  }
+  &__headline {
+    margin-block-end: 16px;
+    font-size: clamp(1.5rem, 2rem + 4.5vw, 8rem);
+  }
+  &__description {
+    line-height: 1.5;
+  }
+  &__control {
+    input,
+    textarea {
+      width: 100%;
+      padding-block: 16px;
+      padding-inline: 24px;
+      border: none;
+      background-color: transparent;
+      font-size: 1.5rem;
+      line-height: 1.625;
+      color: var(--text1);
+      border-bottom: 1px solid var(--accent);
+    }
+    label {
+      margin-block-end: 10px;
+      display: block;
+    }
+    textarea {
+      margin-block-end: 32px;
+    }
+    & > *::placeholder {
+      color: var(--text1);
+      opacity: 0.5;
+      text-transform: uppercase;
+    }
+    &.align-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      font-family: inherit;
+      color: white;
+      font-size: 2rem;
+      border: 1px solid var(--accent);
+      padding: 2rem;
+      &:hover {
+        color: var(--text1);
+        background-color: var(--accent);
+        cursor: pointer;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__invalid-icon {
+    display: none;
+  }
+}

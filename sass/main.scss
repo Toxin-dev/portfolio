@@ -5,9 +5,11 @@
 @import "./components/index.scss";
 @import "animation/icons.scss";
 :root {
-  --container: 69.375rem;
+  --container: 64em;
   --accent: hsl(153, 71%, 59%);
   --border-bottom: hsl(0, 0%, 40%);
+  --bg-body2: hsl(0, 0%, 14%);
+  --text1: hsl(0, 0%, 100%);
 }
 // all section have wrapper
 .wrapper {
@@ -40,4 +42,8 @@ a.underline {
 }
 .section-seprator {
   margin-bottom: 8rem;
+}
+.bg-less-dark{
+  background-color: var(--bg-body2);
+
 }

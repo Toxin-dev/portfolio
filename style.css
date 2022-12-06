@@ -17,56 +17,23 @@ a {
   color: inherit;
 }
 
-.hero {
-  text-align: center;
-}
-.hero__wrapper {
-  padding: 40px;
-  position: relative;
-}
-.hero h1 {
-  text-align: left;
-  margin-bottom: 4em;
-}
-.hero__rings {
-  position: absolute;
-  translate: -50%;
-  width: 400px;
-  top: 100px;
-  height: auto;
-}
-@media screen and (min-width: 37.5em) {
-  .hero__rings {
-    left: 100px;
-  }
-}
-.hero__text a {
-  display: inline-block;
-  font-size: 1.5rem;
-  font-size: clamp(1.5rem, 1.02rem + 1.5vw, 2rem);
+input:invalid,
+textarea:invalid {
+  outline-color: var(--invalid);
 }
 
-.project__wrapper {
-  padding-block: 140px;
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px dashed var(--accent);
+  outline-offset: 2px;
 }
-.project__grid {
-  display: grid;
-  justify-items: center;
-  text-align: center;
-  grid-template-columns: 1fr;
-  gap: 60px;
-}
-@media screen and (min-width: 37.5em) {
-  .project__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-.project__image {
-  width: 100%;
-}
-.project__links {
-  display: flex;
-  flex-direction: column;
+
+.header-xl {
+  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
+  letter-spacing: -0.028em;
+  line-height: 1.1;
 }
 
 .header {
@@ -113,20 +80,130 @@ a {
   display: flex;
   gap: 2rem;
 }
-.header-xl {
-  margin-top: 4em;
-  font-size: 2.5rem;
-  font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
-  letter-spacing: -0.028em;
-  line-height: 1.1;
+
+.hero {
+  text-align: center;
 }
-.header-xl .underline {
-  font-style: normal;
-  text-decoration: underline var(--accent) 5px;
+.hero__wrapper {
+  padding: 40px;
+  position: relative;
 }
-.header-xl .highlight {
-  color: var(--accent);
-  font-style: normal;
+.hero h1 {
+  text-align: left;
+  margin-block: 4em;
+}
+.hero__rings {
+  position: absolute;
+  translate: -50%;
+  width: 400px;
+  top: 100px;
+  height: auto;
+}
+@media screen and (min-width: 37.5em) {
+  .hero__rings {
+    left: 100px;
+  }
+}
+.hero__text a {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.02rem + 1.5vw, 2rem);
+}
+
+.project__wrapper {
+  padding-block: 140px;
+}
+.project__grid {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+@media screen and (min-width: 37.5em) {
+  .project__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.project__image {
+  width: 100%;
+}
+.project__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  position: relative;
+}
+.contact__wrapper {
+  padding-block: 84px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 4rem;
+}
+.contact__rings {
+  position: absolute;
+  left: 0;
+  bottom: 97px;
+  translate: -25%;
+}
+.contact__headline {
+  margin-block-end: 16px;
+  font-size: clamp(1.5rem, 2rem + 4.5vw, 8rem);
+}
+.contact__description {
+  line-height: 1.5;
+}
+.contact__control input,
+.contact__control textarea {
+  width: 100%;
+  padding-block: 16px;
+  padding-inline: 24px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  line-height: 1.625;
+  color: var(--text1);
+  border-bottom: 1px solid var(--accent);
+}
+.contact__control label {
+  margin-block-end: 10px;
+  display: block;
+}
+.contact__control textarea {
+  margin-block-end: 32px;
+}
+.contact__control > *::placeholder {
+  color: var(--text1);
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.contact__control.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact__control button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  color: white;
+  font-size: 2rem;
+  border: 1px solid var(--accent);
+  padding: 2rem;
+}
+.contact__control button:hover {
+  color: var(--text1);
+  background-color: var(--accent);
+  cursor: pointer;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.contact__invalid-icon {
+  display: none;
 }
 
 @keyframes bounce-v {
@@ -138,9 +215,11 @@ a {
   }
 }
 :root {
-  --container: 69.375rem;
+  --container: 64em;
   --accent: hsl(153, 71%, 59%);
   --border-bottom: hsl(0, 0%, 40%);
+  --bg-body2: hsl(0, 0%, 14%);
+  --text1: hsl(0, 0%, 100%);
 }
 
 .wrapper {
@@ -179,6 +258,10 @@ a.underline {
 
 .section-seprator {
   margin-bottom: 8rem;
+}
+
+.bg-less-dark {
+  background-color: var(--bg-body2);
 }
 
 /*# sourceMappingURL=style.css.map */
