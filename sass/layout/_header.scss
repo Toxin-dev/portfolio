@@ -1,4 +1,55 @@
 .header {
-  --ff: "Space Grotesk', sans-serif";
-  font-family: var(--ff);
+  font-size: clamp(1.5rem, 1.02rem + 2.05vw, 2rem);
+  margin: 0 auto;
+  z-index: 1;
+  margin-block-start: 20px;
+  position: relative;
+  @include media($phone) {
+    margin-block-start: 30px;
+  }
+  &__home {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+    @include media($phone) {
+      flex: 0 1 auto;
+      margin-inline-end: auto;
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 20px 25px;
+    flex-direction: column;
+    @include media($phone) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: left;
+      gap: 32px;
+    }
+  }
+  &__social {
+    &-icons {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+  &-xl {
+    margin-top: 4em;
+    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
+    letter-spacing: -0.028em;
+    line-height: 1.1;
+    .underline {
+      font-style: normal;
+      text-decoration: underline var(--accent) 5px;
+    }
+    .highlight {
+      color: var(--accent);
+      font-style: normal;
+    }
+  }
 }

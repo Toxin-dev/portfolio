@@ -8,8 +8,25 @@
   background-clip: text;
   color: transparent;
 }
-@mixin media-screen($width) {
-  @media screen and (max-width: $width) {
-    @content;
+@mixin media($size) {
+  @if $size == $phone {
+    @media screen and (min-width: $phone) {
+      @content;
+    }
+  }
+  @if $size == $tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  @if $size == $desktop {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+  @if $size == $desktop-xl {
+    @media screen and (min-width: $desktop-xl) {
+      @content;
+    }
   }
 }

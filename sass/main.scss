@@ -3,3 +3,41 @@
 @import "./mixins";
 @import "./layout/index";
 @import "./components/index.scss";
+@import "animation/icons.scss";
+:root {
+  --container: 69.375rem;
+  --accent: hsl(153, 71%, 59%);
+  --border-bottom: hsl(0, 0%, 40%);
+}
+// all section have wrapper
+.wrapper {
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  margin-inline: auto;
+  @include media($phone) {
+    width: calc(100% - 3.75rem);
+  }
+}
+body {
+  background-color: #141414;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  scroll-behavior: smooth;
+}
+// utils
+a.underline {
+  --width: 3px;
+  font-style: normal;
+  text-decoration: underline var(--accent) var(--width);
+  text-underline-offset: 8px;
+  padding: 1rem;
+}
+a.underline {
+  text-transform: uppercase;
+}
+.bottom-border {
+  border-bottom: 1px solid var(--border-bottom);
+}
+.section-seprator {
+  margin-bottom: 8rem;
+}
