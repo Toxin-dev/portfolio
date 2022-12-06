@@ -3,11 +3,3 @@
 @import "./mixins";
 @import "./layout/index";
 @import "./components/index.scss";
-.main {
-  display: flex;
-  font-family: "Roboto Condensed", sans-serif;
-  position: relative;
-}
-.content {
-  flex-grow: 1;
-}
