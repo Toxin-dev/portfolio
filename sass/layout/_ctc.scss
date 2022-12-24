@@ -65,6 +65,9 @@
         cursor: pointer;
       }
     }
+    input:focus, textarea:focus{
+      border-bottom-width: 0px;
+    }
   }
   &__form {
     display: flex;
